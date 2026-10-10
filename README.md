@@ -12,6 +12,14 @@ npm ci
 npm run docs:dev
 ```
 
+The local site is available at
+`http://localhost:5173/projects/AIVisionKit/en/latest/`.
+To use a fixed local address and fail if the port is already occupied:
+
+```bash
+npm run docs:dev -- --host 127.0.0.1 --port 5173 --strictPort
+```
+
 Build the production site and stage the artifacts:
 
 ```bash
